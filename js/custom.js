@@ -376,6 +376,27 @@ function displayModal() {
           <button class="btn btn-danger fw-bold mt-4 buy-now">Buy Now</button>
           `;
 
+          //Purchase Modal
+          const buyNowBtn = document.querySelector(".buy-now");
+          buyNowBtn.addEventListener("click", function () {
+            modalWindow.style.opacity = 1;
+            modalWindow.style.visibility = "visible";
+
+            modalWindow.innerHTML = `
+          <h3 class="fw-bold mt-3 text-success">${title} (${year}) Movie Ticket Successfully Purchase</h3>
+          <h5><strong>Ticket Cost:</strong> ${price} ৳</h5>
+          <h5><strong>Standered VAT:</strong> ${vat} ৳</h5>
+          <h3><strong>Subtotal:</strong><span class="text-danger"> ${subtotal} ৳</h3>
+          <h3><strong>Payment:</strong><span class="text-success"> ${subtotal} ৳ (Complete)</h3>
+          <button class="btn btn-warning fw-bold mt-4 print-ticket">Print Ticket🖨</button>
+          `;
+            //Ticket Print Modal Close
+            const printTicket = document.querySelector(".print-ticket");
+            printTicket.addEventListener("click", function () {
+              modalWindow.style.opacity = 0;
+              modalWindow.style.visibility = "hidden";
+            });
+          });
           // hiding the modal
           const closeBtn = document.querySelector(".close-btn");
 
