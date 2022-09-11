@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reel Verse</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- ===========Navbar============ -->
+      <nav class="navbar navbar-expand-lg position-fixed top-0 w-100">
+        <div class="container">
+          <a class="navbar-brand h1 mb-0" href="#">Reel Verse</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#in-cinema">In Cinamas Now</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#trending">Trending Now</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Subscribe</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- ==========slider=========== -->
+
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide container"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/slider-1.jpg" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="images/slider-2.jpg" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="images/slider-5.jpg" class="d-block w-100" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- =======In cinemas now ========-->
+      <div class="container mt-5 id= "in-cinemas">
+        <h2 class="text-center mb-5">In Cinamas Now</h2>
+        <div class="row">
+          <div class="col">
+            <img src="images/in-cinemas.jpg" alt="movie poster" class="w-100" />
+          </div>
+          <div class="col">
+            <h3>Top Gun: Maverick (2022)</h3>
+            <p>
+              Top Gun: Maverick is a 2022 American action drama film directed by
+              Joseph Kosinski. It is the sequel to the 1986 film Top Gun and the
+              second installment in the Top Gun film series. Written by Ehren
+              Kruger, Eric Warren Singer, and Christopher McQuarrie, the film is
+              based on a story by Peter Craig and Justin Marks.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              ipsa odio provident vel quo facilis impedit vitae rem eaque
+              eligendi similique, nemo reprehenderit error iure animi natus
+              doloribus ex a.
+            </p>
+            <p><strong>Release date:</strong> May 27, 2022 (USA)</p>
+            <p><strong>Director:</strong> Joseph Kosinski</p>
+            <p><strong>Box office:</strong> 1.355 billion USD</p>
+            <p><strong>Budget:</strong> 170 million USD</p>
+            <p><strong>Distributed by:</strong> Paramount Pictures</p>
+            <p>
+              <strong>Music by:</strong> Harold Faltermeyer; Lady Gaga; Hans
+              Zimmer; Lorne Balfe
+            </p>
+            <hr />
+            <h3 class="fw-bold mt-5 text-success">Running Successfully 🛩️</h3>
+          </div>
+        </div>
+      </div>
+      <!-- =========treanding now =========-->
+      <div class="container mt-5 id= "treanding">
+        <h2 class="text-center mb-5">Trending Now</h2>
+        <div
+          class="movies row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center gap-5 mb-5"
+        >
+          <!-- movies goes here -->
+        </div>
+      </div>
+      <!-- modal window -->
+      <div class="conatainer modal-window w-100"></div>
+      
+      <!-- contact -->
+      <div class="container" id="contact">
+        <h2 class="text-center mt-5">Support Now</h2>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Your name goes here"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Message</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="Write something about us"
+          ></textarea>
+        </div>
+        <button class="btn btn-dark">Submit</button>
+      </div>
+    </main>
+    <footer class="text-center m-5">
+      <p>&copy;2022, Reel Verse. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
