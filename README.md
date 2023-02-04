@@ -34,6 +34,4 @@ We welcome contributions from the community. If you want to contribute to the pr
 4. Push the changes to your fork
 5. Create a pull request to the original repository
 
-## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
